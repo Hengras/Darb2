@@ -173,5 +173,27 @@
      Tel: +371 2461241</p>
 </footer>
 
+  <script>
+ document.querySelector("input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      alert("Tu meklēji: " + this.value);
+    }
+  });
+
+  document.querySelectorAll(".ad button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      alert("Paldies! Tavs pieprasījums ir saņemts.");
+    });
+  });
+  document.querySelectorAll(".grid-item").forEach(item => {
+    item.addEventListener("mouseenter", () => {
+      item.style.backgroundColor = "#444";
+    });
+    item.addEventListener("mouseleave", () => {
+      item.style.backgroundColor = "#222";
+    });
+  });
+</script>
+
 </body>
 </html>
