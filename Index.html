@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mana Lapa</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #f8f8f8; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+    nav a { margin: 0 10px; text-decoration: none; color: #333; }
+    .hero { background: #eee; text-align: center; padding: 40px 20px; }
+    .hero h1 { font-size: 24px; }
+    .buttons button { margin: 10px; padding: 10px 20px; }
+    .news-section, .ads, .carousel, .info { padding: 20px; }
+    .news-items, .table-grid { display: flex; justify-content: space-between; }
+    .news-item { width: 30%; background: #fafafa; padding: 10px; }
+    .ads { background: #d4ead3; text-align: center; }
+    .carousel { text-align: center; background: #f0f0f0; position: relative; }
+    .carousel img { width: 100%; height: 200px; object-fit: cover; }
+    .info ul { list-style: square; padding-left: 20px; }
+    .table-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center; }
+    footer { background: #f9eec0; display: flex; justify-content: space-between; font-size: 14px; }
+    .footer-column { width: 33%; padding: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>Logo</div>
+  <nav>
+    <a href="#">Sākums</a>
+    <a href="#">Par mums</a>
+    <a href="#">Kontakti</a>
+  </nav>
+  <input type="text" placeholder="Meklēt">
+</header>
+
+<div class="hero">
+  <h1>Galvenais virsraksts</h1>
+  <p>Šeit ir īss apraksts par jūsu vietni vai saturu, ko piedāvājat.</p>
+  <div class="buttons">
+    <button>Lasīt vairāk</button>
+    <button style="background-color: lightblue;">Pieteikties</button>
+  </div>
+</div>
+
+<div class="news-section">
+  <div class="news-items">
+    <div class="news-item">
+      <p>[Ziņas bilde]</p>
+      <strong>Virsraksts</strong>
+      <p><a href="#">Lasīt vairāk</a></p>
+    </div>
+    <div class="news-item">
+      <p>[Ziņas bilde]</p>
+      <strong>Cits ziņu virsraksts</strong>
+      <p><a href="#">Lasīt vairāk</a></p>
+    </div>
+    <div class="news-item">
+      <p>[Ziņas bilde]</p>
+      <strong>Vēl viena ziņa</strong>
+      <p><a href="#">Lasīt vairāk</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="ads">
+  <h2>Reklāmas virsraksts</h2>
+  <button style="background-color: #fbe6a2;">Pirkt</button>
+  <button style="background-color: #f5a3a3;">Izmēģināt</button>
+</div>
+
+<div class="carousel">
+  <img src="https://via.placeholder.com/800x200" alt="Karuseļa bilde">
+  <div>&#8592; &#9679; &#9679; &#8594;</div>
+</div>
+
+<div class="info">
+  <h2>Informācija</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <ul>
+    <li>Punkts viens</li>
+    <li>Punkts divi</li>
+    <li>Punkts trīs</li>
+  </ul>
+
+  <div class="table-grid">
+    <div>Value 1</div><div>Value 2</div><div>Value 3</div>
+    <div>Value 4</div><div>Value 5</div><div>Value 6</div>
+    <div>Value 7</div><div>Value 8</div><div>Value 9</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-column">
+    <strong>Logo</strong>
+  </div>
+  <div class="footer-column">
+    <strong>Kontakti:</strong><br>
+    E-pasts: info@example.com<br>
+    Tel: +371 1234567
+  </div>
+  <div class="footer-column">
+    <strong>Izvēlne</strong><br>
+    <a href="#">Sākums</a><br>
+    <a href="#">Par mums</a><br>
+    <a href="#">Kontakti</a>
+  </div>
+</footer>
+<div style="text-align: center; font-size: 12px;">Autors: Tavs Vārds</div>
+
+</body>
+</html>
